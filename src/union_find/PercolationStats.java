@@ -1,0 +1,32 @@
+package union_find;
+
+public class PercolationStats {
+	public PercolationStats(int N, int T) {
+		// perform T independent computational experiments on an N-by-N grid
+	}
+
+	public double mean() {
+		// sample mean of percolation threshold
+		return (Double) null;
+	}
+
+	public double stddev() {
+		// sample standard deviation of percolation threshold
+		return (Double) null;
+	}
+
+	public double confidenceLo() {
+		// returns lower bound of the 95% confidence interval
+		return (Double) null;
+
+	}
+
+	public double confidenceHi() {
+		// returns upper bound of the 95% confidence interval
+		return (Double) null;
+	}
+
+	public static void main(String[] args) {
+		// test client, described below
+	}
+}

@@ -1,10 +1,10 @@
 package union_find;
 
-public class QuickUnionUF {
+public class QuickUnionUF_X {
 	private int[] id;
 	private int[] sz;
 	
-	public QuickUnionUF(int N){
+	public QuickUnionUF_X(int N){
 		id = new int[N];
 		sz = new int[N];
 		for(int i = 0; i < N; i++){
@@ -34,7 +34,7 @@ public class QuickUnionUF {
 		else { id[j] = i; sz[i]+=sz[j];	}
 	}
 	
-	public void print(QuickUnionUF N){
+	public void print(QuickUnionUF_X N){
 		int[] Nums = N.id;
 		for(int i = 0; i < Nums.length; i++){
 			System.out.print(Nums[i]+" ");
@@ -42,7 +42,7 @@ public class QuickUnionUF {
 	}
 	
 	public static void main(String[] args){//4-0 0-3 4-5 6-2 0-7 9-8 9-2 4-6 1-9 
-		QuickUnionUF qf = new QuickUnionUF(10);
+		QuickUnionUF_X qf = new QuickUnionUF_X(10);
 		qf.union(4, 0);
 		qf.union(0, 3);
 		qf.union(4, 5);
