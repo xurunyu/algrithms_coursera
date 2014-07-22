@@ -26,7 +26,7 @@ public class QuickFindUF {
 	public void print(QuickFindUF N){
 		int[] Nums = N.id;
 		for(int i = 0; i < Nums.length; i++){
-			System.out.print(Nums[i]+" ");
+			System.out.print(Nums[i]+"  ");
 		}
 	}
 	
@@ -38,6 +38,6 @@ public class QuickFindUF {
 		qf.union(3, 8);
 		qf.union(0, 1);
 		qf.union(1, 6);
-		qf.print(qf);
+//		qf.print(qf);
 	}
 }
